@@ -48,6 +48,8 @@ Avances:
  9. Áreas de Mejora:
      [PENDIENTE] Identificar posibles mejoras o funcionalidades adicionales.
 
+
+
 Diseño y modelacion
 Dibujar Diagrama de Clases.
 ********
@@ -344,3 +346,28 @@ TAREAS SECUNDARIAS
 Diagrama de Clases: Mejorar el diagrama con relaciones y cardinalidad.
 Documentación (Swagger): Configurar Swagger para generar documentación de la API.
 Despliegue: Definir una estrategia de despliegue para poner la aplicación en producción.
+
+**********************************************
+Avances:12/07/2024
+
+Entidades, Repositorios y Controladores: Implementados.
+Autenticación y Seguridad (Spring Security): Implementada autenticación basada en JWT, roles y permisos definidos.
+Manejo de Errores: Implementadas excepciones personalizadas y un controlador global de excepciones.
+
+TAREA PENDIENTE
+Escribir Pruebas Unitarias e de Integración:
+Diseñar e implementar pruebas para cubrir todas las funcionalidades críticas de la aplicación, incluyendo registro y autenticación de usuarios, creación y gestión de tópicos, publicación y gestión de respuestas, comentarios, y roles y permisos.
+Utilizar frameworks como JUnit y Mockito para las pruebas.
+Asegurar que la autorización funciona correctamente y que los usuarios solo pueden acceder a las funcionalidades permitidas según su rol.
+PRIORIDAD MEDIA 
+Documentación (Swagger):
+Configurar Swagger para generar documentación de la API y facilitar su uso por parte de otros desarrolladores.
+Diagrama de Clases:
+
+Mejorar el diagrama de clases con relaciones y cardinalidad para una mejor visualización de la estructura de la aplicación.
+Despliegue:
+
+Definir una estrategia de despliegue para poner la aplicación en producción (por ejemplo, en un servidor en la nube).
+Áreas de Mejora:
+
+Identificar posibles mejoras o funcionalidades adicionales que podrían agregarse al proyecto.

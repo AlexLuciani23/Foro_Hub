@@ -1,6 +1,4 @@
 package com.example.ForoHub.servicios;
-// Importación corregida
-
 import entidades.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,11 +16,10 @@ public class UsuarioService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    public void crearUsuario(Usuario usuario) {
-        usuarioRepository.save(usuario);
+    public Usuario crearUsuario(Usuario usuario) {
+        return usuarioRepository.save(usuario);
     }
-
-    // Agrega más métodos según las funcionalidades que quieras implementar
+// Agrega más métodos según las funcionalidades que quieras implementar
 }
 
 
