@@ -49,7 +49,6 @@ Avances:
      [PENDIENTE] Identificar posibles mejoras o funcionalidades adicionales.
 
 
-
 Diseño y modelacion
 Dibujar Diagrama de Clases.
 ********
@@ -90,231 +89,9 @@ png
 svg
 html
 
-*********************************************
-Resumen del proyecto
-Aquí tienes un resumen de lo que encontré:
 
-Estructura del proyecto: El proyecto está bien organizado, con paquetes para entidades, controladores, repositorios y servicios.
-Entidades: Las entidades Usuario, Topico y Respuesta están bien definidas, con los atributos necesarios.
-Controladores: Los controladores tienen los endpoints básicos para gestionar las entidades.
-Repositorios: Los repositorios utilizan Spring Data JPA para interactuar con la base de datos.
-Seguridad: Veo que tienes una clase SecurityConfig y las clases UserDetailsServiceImpl y UserDetailsImpl, lo cual es un buen comienzo para implementar la seguridad.
-Puntos a mejorar:
-
-Diagrama de clases: Sería útil tener un diagrama de clases que muestre las relaciones entre las entidades y sus cardinalidades.
-Autenticación y autorización: La configuración de Spring Security necesita ser completada para implementar el sistema de autenticación basado en JWT que discutimos.
-Manejo de errores: No veo una estrategia definida para manejar errores y excepciones.
-Pruebas: Faltan pruebas unitarias e de integración para asegurar la calidad del código.
-Swagger: No veo la configuración de Swagger para generar documentación de la API.
-
-***********************************
-Tarea Pendiente
-Implementación de Entidades y Repositorios:
-Entidad Usuario: Implementada
-Repositorio Usuario: Implementado
-Entidad Tópico: Implementada
-Repositorio Tópico: Implementado
-Entidad Respuesta: Implementada
-Repositorio Respuesta: Implementado
-Implementación de Controladores:
-Controladores para Usuario, Tópico y Respuesta: Completados
-Corrección de error en WebSecurityConfig:
-Bean userDetailsService inyectado correctamente.
-Creación de la clase JwtUtils:
-Métodos para generar, obtener el nombre de usuario y validar tokens JWT implementados.
-Diseño y Modelado:
-Diagrama de Clases: Mejorar diagrama con relaciones y cardinalidad.(PENDIENTE AL FINAL)
-Autenticación y Seguridad (Spring Security):
-Implementar autenticación basada en JWT:
-Elegir librería JWT: (jjwt) - ¡Ya elegimos jjwt!
-Crear clase JwtUtils: - ¡Ya creada!
-Crear filtro AuthTokenFilter: Para validar tokens en cada solicitud.
-Configurar Spring Security: Para usar tokens JWT.
-Definir roles y permisos: De forma eficiente.
-Escribir pruebas de seguridad: (unitarias e de integración).
-Manejo de Errores:
-Definir estrategia: Para manejar errores y excepciones.
-Considerar clases de excepción personalizadas:
-Pruebas:
-Definir plan de pruebas: Unitarias e de integración.
-Implementar pruebas:
-Documentación (Swagger):
-Configurar Swagger: Para generar documentación de la API.
-Despliegue:
-Definir estrategia de despliegue:
-Áreas de Mejora:
-Identificar posibles mejoras:
-*************************************
-
-Implementación de Entidades y Repositorios:
-Entidad Usuario: Implementada
-Repositorio Usuario: Implementado
-Entidad Tópico: Implementada
-Repositorio Tópico: Implementado
-Entidad Respuesta: Implementada
-Repositorio Respuesta: Implementado
-Implementación de Controladores:
-Controladores para Usuario, Tópico y Respuesta: Completados
-Corrección de error en WebSecurityConfig:
-Bean userDetailsService inyectado correctamente.
-Creación de la clase JwtUtils:
-Métodos para generar, obtener el nombre de usuario y validar tokens JWT implementados.
-Creación del filtro AuthTokenFilter:
-Filtro para validar tokens JWT en cada solicitud implementado.
-Configuración de Spring Security:
-Spring Security configurado para usar tokens JWT en la autenticación y autorización.
-TAREAS PENDIENTE
-Diseño y Modelado:
-Diagrama de Clases: Mejorar diagrama con relaciones y cardinalidad.
-Autenticación y Seguridad (Spring Security):
-Definir roles y permisos: De forma eficiente.
-Escribir pruebas de seguridad: (unitarias e de integración).
-Manejo de Errores:
-Definir estrategia: Para manejar errores y excepciones.
-Considerar clases de excepción personalizadas:
-Pruebas:
-Definir plan de pruebas: Unitarias e de integración.
-Implementar pruebas:
-Documentación (Swagger):
-Configurar Swagger: Para generar documentación de la API.
-Despliegue:
-Definir estrategia de despliegue:
-Áreas de Mejora:
-Identificar posibles mejoras: O funcionalidades adicionales.
-***************************************************************
-¡Excelente, Alex! Me alegra que te guste la propuesta de roles y permisos.
-
-Implementación de Entidades y Repositorios:
-Entidad Usuario: Implementada
-Repositorio Usuario: Implementado
-Entidad Tópico: Implementada
-Repositorio Tópico: Implementado
-Entidad Respuesta: Implementada
-Repositorio Respuesta: Implementado
-Implementación de Controladores:
-Controladores para Usuario, Tópico y Respuesta: Completados
-Corrección de error en WebSecurityConfig:
-Bean userDetailsService inyectado correctamente.
-Creación de la clase JwtUtils:
-Métodos para generar, obtener el nombre de usuario y validar tokens JWT implementados.
-Creación del filtro AuthTokenFilter:
-Filtro para validar tokens JWT en cada solicitud implementado.
-Configuración de Spring Security:
-Spring Security configurado para usar tokens JWT en la autenticación y autorización.
-Definición de roles y permisos:
-Roles: ROLE_ADMIN, ROLE_MODERATOR, ROLE_USER.
-Permisos: CREAR_TOPICO, EDITAR_TOPICO, ELIMINAR_TOPICO, CREAR_RESPUESTA, EDITAR_RESPUESTA, ELIMINAR_RESPUESTA, GESTIONAR_USUARIOS.
-Verificación del repositorio de GitHub:
-El repositorio está actualizado con los cambios realizados.
-Diseño y Modelado:
-Diagrama de Clases: Mejorar diagrama con relaciones y cardinalidad.
-Autenticación y Seguridad (Spring Security):
-Implementar roles y permisos en el código:
-Agregar roles a la entidad Usuario.
-Verificar permisos en los controladores usando anotaciones como @PreAuthorize.
-Escribir pruebas de seguridad: (unitarias e de integración).
-Manejo de Errores:
-Definir estrategia: Para manejar errores y excepciones.
-Considerar clases de excepción personalizadas:
 ****************************************************************
-Implementación de Entidades y Repositorios (09/07/2024)
 
-Entidad Usuario: Implementada.
-Repositorio Usuario: Implementado.
-Entidad Tópico: Implementada.
-Repositorio Tópico: Implementado.
-Entidad Respuesta: Implementada.
-Repositorio Respuesta: Implementado.
-Entidad Comentario: Implementada.
-Repositorio Comentario: Implementado.
-Entidad Rol: Implementada.
-Repositorio Rol: Implementado.
-Enum EstadoTopico: Implementado.
-Implementación de Controladores (09/07/2024)
-
-Controladores para Usuario, Tópico, Respuesta, Comentario y Rol: Completados.
-Autenticación y Seguridad (Spring Security) (09/07/2024)
-
-Corrección de error en WebSecurityConfig: Bean userDetailsService inyectado correctamente.
-Creación de la clase JwtUtils: Métodos para generar, obtener el nombre de usuario y validar tokens JWT implementados.
-Creación del filtro AuthTokenFilter: Filtro para validar tokens JWT en cada solicitud implementado.
-Configuración de Spring Security: Spring Security configurado para usar tokens JWT en la autenticación y autorización.
-Implementación de @PreAuthorize en todos los controladores: Se ha agregado la anotación para controlar los permisos de acceso a los métodos de los controladores.
-Panel de Administración (09/07/2024)
-
-Creación del controlador AdminController: Se ha creado el controlador para manejar las solicitudes del panel de administración.
-Implementación del método listarUsuarios: Se ha implementado el método para obtener y mostrar la lista de usuarios.
-Creación de la vista listarUsuarios.html: Se ha creado la vista para mostrar la lista de usuarios en una tabla, incluyendo enlaces para asignar y eliminar roles.
-*************************************************
-10/07/2024 ACTUALIZADO TAREA PENDIENTE
-Diseño y Modelado:
-Diagrama de Clases: Mejorar diagrama con relaciones y cardinalidad.
-Autenticación y Seguridad (Spring Security):
-Asignar roles a usuarios: Implementar la lógica para que los administradores puedan asignar roles a los usuarios a través del panel de administración.
-Escribir pruebas de seguridad: (unitarias e de integración) para verificar que la autorización funciona correctamente.
-Manejo de Errores:
-Definir estrategia: Para manejar errores y excepciones de forma consistente en toda la aplicación.
-Considerar clases de excepción personalizadas: Para manejar errores específicos de tu aplicación.
-Pruebas:
-Definir plan de pruebas: Unitarias e de integración para asegurar la calidad del código.
-Implementar pruebas: Para los controladores, servicios y otras partes de la aplicación.
-Documentación (Swagger):
-Configurar Swagger: Para generar documentación de la API y facilitar su uso.
-Despliegue:
-Definir estrategia de despliegue: Para poner la aplicación en producción.
-Áreas de Mejora:
-Identificar posibles mejoras: O funcionalidades adicionales que podrían agregarse al proyecto.
-Panel de Administración:
-Implementar funcionalidades adicionales: Asignar y eliminar roles a usuarios, gestionar tópicos y respuestas, etc.
-*******************************************
-11/07/2024 ACTUALIZADO TAREA PENDIENTES
-Asignación de Roles (Hoy):
-
-Crear endpoints en AdminController para asignar y quitar roles a usuarios (ej. POST /usuarios/{userId}/roles/{roleId}).//
-Implementar la lógica para actualizar la relación entre usuarios y roles en la base de datos.
-Validar que solo administradores puedan realizar estas operaciones.
-Manejo de Errores (Mañana):
-
-Definir una estrategia clara para manejar errores y excepciones.
-Crear clases de excepción personalizadas para errores específicos de la aplicación (ej. RecursoNoEncontradoException, ErrorDeValidacionException).
-Implementar un controlador global de excepciones (@ControllerAdvice) con métodos @ExceptionHandler para manejar los diferentes tipos de errores.
-Devolver respuestas HTTP adecuadas (400, 404, 403, 500, etc.).
-Tareas Secundarias (Pasado Mañana):
-
-Pruebas Unitarias e de Integración:
-Definir un plan de pruebas para cubrir los controladores, servicios y otras partes críticas de la aplicación.
-Implementar las pruebas utilizando frameworks como JUnit y Mockito.
-Asegurar que la autorización funciona correctamente y que los usuarios solo pueden acceder a las funcionalidades permitidas según su rol.
-Tareas Opcionales (Si queda tiempo):
-
-Diagrama de Clases: Mejorar el diagrama con relaciones y cardinalidad.
-Documentación (Swagger): Configurar Swagger para generar documentación de la API.
-***************************************************************
-PROYECTO FORO HUB REGISTRO AVANCES DETALLADO(10/07/2024-11/07/2024)Implementación de Entidades y Repositorios (09/07/2024)
-TAREA COMPLETADA
-Entidad Usuario: Implementada.
-Repositorio Usuario: Implementado.
-Entidad Tópico: Implementada.
-Repositorio Tópico: Implementado.
-Entidad Respuesta: Implementada.
-Repositorio Respuesta: Implementado.
-Entidad Comentario: Implementada.
-Repositorio Comentario: Implementado.
-Entidad Rol: Implementada.
-Repositorio Rol: Implementado.
-Enum EstadoTopico: Implementado.
-Implementación de Controladores (09/07/2024)
-
-Controladores para Usuario, Tópico, Respuesta, Comentario y Rol: Completados.
-Autenticación y Seguridad (Spring Security) (09/07/2024 - 11/07/2024)
-
-Corrección de error en WebSecurityConfig: Bean userDetailsService inyectado correctamente.
-Creación de la clase JwtUtils: Métodos para generar, obtener el nombre de usuario y validar tokens JWT implementados.
-Creación del filtro AuthTokenFilter: Filtro para validar tokens JWT en cada solicitud implementado.
-Configuración de Spring Security: Spring Security configurado para usar tokens JWT en la autenticación y autorización.
-Implementación de @PreAuthorize en todos los controladores: Se ha agregado la anotación para controlar los permisos de acceso a los métodos de los controladores.
-Asignar roles a usuarios: Se implementó la lógica en el AdminController para asignar y quitar roles a los usuarios a través de los endpoints /usuarios/{usuarioId}/roles/{rolId} POST y DELETE y etc
-*******************************************************
 TAREAS COMPLETADAS
 ✅ Asignación de Roles:
 ✅ Crear endpoints en AdminController para asignar y quitar roles a usuarios.
@@ -371,3 +148,23 @@ Definir una estrategia de despliegue para poner la aplicación en producción (p
 Áreas de Mejora:
 
 Identificar posibles mejoras o funcionalidades adicionales que podrían agregarse al proyecto.
+
+
+
+com.example.ForoHub
+├── controladores
+│   └── com.example.ForoHub
+├── controladores
+│   └── AuthController.java
+├── entidades
+│   └── Usuario.java
+├── repositorios
+│   └── UsuarioRepository.java
+└── servicios
+    └── UsuarioService.java.java
+├── entidades
+│   └── Usuario.java
+├── repositorios
+│   └── UsuarioRepository.java
+└── servicios
+    └── UsuarioService.java

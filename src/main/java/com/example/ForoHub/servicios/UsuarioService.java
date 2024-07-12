@@ -7,10 +7,10 @@ import repositorios.UsuarioRepository;
 
 @Service
 public class UsuarioService {
-    // En la clase UsuarioService
-    public void setUsuarioRepository(UsuarioRepository usuarioRepository) {
-        this.usuarioRepository = usuarioRepository;
-    }
+
+ //   public void setUsuarioRepository(UsuarioRepository usuarioRepository) {
+//        this.usuarioRepository = usuarioRepository;
+ //   }
 
 
     @Autowired
